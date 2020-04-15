@@ -1,0 +1,26 @@
+{
+  "name": "brief-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "jquery": "^3.5.0",
+    "nodemon": "^2.0.3"
+  },
+  "nodemonConfig": {
+    "restartble": "rs",
+    "ignore": [
+      "nodde_modules/**/node_modules"
+    ],
+    "delay": "2500"
+  }
+}
