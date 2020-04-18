@@ -1,0 +1,126 @@
+<!doctype html>
+    <html lang="en">
+      <head>
+        <title>Gestion_Citation</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-them.min.css">
+        <link rel="stylesheet" href="/css/style.css">  
+    
+
+      </head>
+      <body>
+       
+        <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only"> </span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="/" class="navbar-brand">Home</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+              <ul class="nav navbar-nav">
+              
+              
+              </ul>
+             
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+
+        <div id="masthead">  
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>Library
+                  <p class="lead"></p>
+                </h1>
+              </div>
+              <div class="col-md-5">
+                <div class="well well-lg"> 
+                  <div class="row">
+                    <div class="col-sm-12">
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div><!-- /cont -->
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="top-spacer"> </div>
+              </div>
+            </div> 
+          </div><!-- /cont -->
+          
+        </div>
+        
+        
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-12"> 
+              
+              <div class="panel">
+                <div class="panel-body">
+    
+  
+              </div>
+                                              
+               </div>
+          </div>
+        </div>
+          <div class="container">
+
+            <% for(auteur of auteurs){%>
+            <div class="card-body">
+              <div class="card-title"">
+               
+                
+                <h1 class="card-text"><%= auteur.description %></h1>
+                <h1 class="card-text"><%= auteur.name %></h1>
+                <h1 class="card-text"><%= auteur.biographique %></h1>
+                <h1 class="card-text"><%= auteur.city %></h1>
+                <h1 class="card-text"><%= auteur.books %></h1>
+               
+              </div>
+              <div class="panel">
+                <a class="card-body" href="edit/<%= auteur.id %>"> <button type="button" class="btn btn-primary">Edit</button></a>
+                <a class="card-body" href="delete/<%= auteur.id %>">  <button type="button" class="btn btn-primary">AEdit</button></a>
+              
+               
+             </div>
+            </div>
+           - <%}%>
+            <div class="panel">
+        
+            <a class="card-body" href="/add">  <button type="button" class="btn btn-primary">ADD Auture</button></a>
+          </div>
+          </div> 
+          
+        
+          <script src="js/jquery.min.js"></script>
+          <script src="js/bootstrap.min.js" > </script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+      </body>
+
+</html>

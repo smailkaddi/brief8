@@ -10,11 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^3.3.7",
+    "dateformat": "^3.0.3",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
+    "express-partials": "^0.3.0",
     "jquery": "^3.5.0",
-    "nodemon": "^2.0.3"
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.3",
+    "tether": "^1.4.7"
   },
   "nodemonConfig": {
     "restartble": "rs",
