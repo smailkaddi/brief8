@@ -168,3 +168,22 @@ a,a:hover {
 .btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
 .btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
 .btn-google-plus:hover {background-color:#C23836;color:#E45A58;}
+
+.card-title{
+
+ 
+  width: 405PX;
+  
+}
+
+.form-control{
+
+width: 100%;
+height: 53px;
+padding: 12px 12px;
+font-size: 19px;
+}
+label {
+margin-bottom: -8px;
+color:#3088FF;
+}

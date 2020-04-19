@@ -87,61 +87,18 @@
         </div>
           <div class="container">
             <h2>Add new Section</h2>
-            <form action="/save" method="POST">
-            <div class="row100">
-               <div class="col">
-                 <div class="inputBox">
-                    <input type="text" name="name" required="required">
-                    <span class="text">Name</span>
-                    <span class="line"></span>
-                 </div>
-               </div>   
-            </div>  
-            <div class="row100">
-              <div class="col">
-                <div class="inputBox">
-                   <input type="text" name="biographique" required="required" >
-                   <span class="text">biographique</span>
-                   <span class="line"></span>
+            <form action="/save" method="POST">    
+                <label>Name</label><input class="form-control" type="text"  name="name" required >
+                <label>your citation</label><input class="form-control" type="text" name="description" required>
+                <label>city</label><input class="form-control" type="text"  name="city"  required>
+                <label>biographique</label><input class="form-control" type="text"  name="biographique" required>
+                <label>books</label><input class="form-control" type="text"  name="books"   required>
+                <div class="col-12 d-flex justify-content-center" style="margin-top: 10px;">
+                 
+                   <input  class="btn btn-primary" type="submit" value="submit">
                 </div>
-              </div>   
-           </div>    
-            <div class="row100"> 
-              <div class="col">
-                <div class="inputBox textarea">
-                  <input type="text" required="required" name="description"></input> 
-                  <span class="text">your citation</span>
-                  <span class="line"></span>
-                </div>
-              </div> 
-            </div>   
-            <div class="row100">
-              <div class="col">
-                <div class="inputBox">
-                   <input  name="city" required="required" class="file">
-                   <span class="text">city</span>
-                   <span class="line"></span>
-                </div>
-              </div>   
-           </div>   
-           <div class="row100">
-            <div class="col">
-              <div class="inputBox">
-                 <input  name="books" required="required" class="file">
-                 <span class="text">books</span>
-                 <span class="line"></span>
-              </div>
-            </div>   
-         </div>   
-            <div class="row100"> 
-              <div class="col">
-               
-                 <input  class="btn btn-primary" type="submit" value="Send">
-              </div>
-            </div>           
-            </div>
-          </form>
-          </div>
+              </form>
+         
 
           <script src="js/jquery.min.js"></script>
           <script src="js/bootstrap.min.js" > </script>

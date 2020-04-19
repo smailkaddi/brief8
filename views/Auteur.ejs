@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a href="/" class="navbar-brand">Home</a>
+              <a href="/" class="navbar-brand" style="font-size: 30px;" > Home</a>
             </div>
             <nav class="collapse navbar-collapse" role="navigation">
               <ul class="nav navbar-nav">
@@ -36,8 +36,6 @@
             </nav>
           </div>
         </header>
-
-
         <div id="masthead">  
           <div class="container">
             <div class="row">
@@ -68,8 +66,6 @@
           </div><!-- /cont -->
           
         </div>
-        
-        
         <div class="container">
           <div class="row">
             
@@ -88,31 +84,24 @@
 
             <% for(auteur of auteurs){%>
             <div class="card-body">
-              <div class="card-title"">
-               
-                
-                <h1 class="card-text"><%= auteur.description %></h1>
-                <h1 class="card-text"><%= auteur.name %></h1>
-                <h1 class="card-text"><%= auteur.biographique %></h1>
-                <h1 class="card-text"><%= auteur.city %></h1>
-                <h1 class="card-text"><%= auteur.books %></h1>
-               
+              <div class="card-title">
+                <label  >Name Auteur :</label>   <h2 class="form-control"><%= auteur.name %></h2>
+                <label > description </label>   <h2 class="form-control"><%= auteur.description %></h2>
+                <label>  city </label>  <h2 class="form-control"><%= auteur.city %></h2>
+                <label >biographique </label> </label>   <h2 class="form-control"><%= auteur.biographique %></h2>
+                <label > books </label>  <h2 class="form-control"><%= auteur.books %></h2>
               </div>
-              <div class="panel">
+
+              <div>
+                <a class="card-body" href="/add">  <button type="button" class="btn btn-primary">ADD Auture</button></a>
                 <a class="card-body" href="edit/<%= auteur.id %>"> <button type="button" class="btn btn-primary">Edit</button></a>
-                <a class="card-body" href="delete/<%= auteur.id %>">  <button type="button" class="btn btn-primary">AEdit</button></a>
+                <a class="card-body" href="delete/<%= auteur.id %>">  <button style="background-color: red;" type="button" class="btn btn-primary">Delete</button></a>
               
                
              </div>
             </div>
-           - <%}%>
-            <div class="panel">
-        
-            <a class="card-body" href="/add">  <button type="button" class="btn btn-primary">ADD Auture</button></a>
-          </div>
-          </div> 
-          
-        
+           <%}%>
+       
           <script src="js/jquery.min.js"></script>
           <script src="js/bootstrap.min.js" > </script>
 
